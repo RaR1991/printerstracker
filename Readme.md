@@ -1,45 +1,41 @@
-Printer Status Web Interface
+# Printers Tracker
 
 This project is a web interface built with Flask to display printer status information obtained from printers connected to the local network. It was a quick project developed for my role as an IT support for Asian Cup 2023 in order to make it easy to track printers in my venue. The printers were mainly Xerox MFP C315 and WorkCentre 7855.
-Features
 
-    Display printer status including IP, serial number (SN), location, and toner levels.
-    Automatically refreshes printer status every 10 minutes using AJAX.
-    Bootstrap styling for a pleasant user interface.
-    Supports displaying additional information such as replace status (rp).
+## Features
 
-Installation
+- Display printer status including IP, serial number (SN), location, and toner levels.
+- Displaying additional information such as replace needed.
 
-    Clone the repository:
+## Installation
 
-    bash
+1. Clone the repository:
 
-git clone https://github.com/your-username/printer-status.git
+   ```bash
+   git clone https://github.com/RaR1991/printerstracker.git
+   ```
 
-Install the required dependencies:
+2. Install the required dependencies:
 
-bash
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-pip install -r requirements.txt
+3. Run the Flask application:
 
-Run the Flask application:
+   ```bash
+   python app.py
+   ```
 
-bash
+4. Open your web browser and navigate to `http://localhost:5000` to view the printer status web interface.
 
-    python app.py
+## Other Scripts
 
-    Open your web browser and navigate to http://localhost:5000 to view the printer status web interface.
+In addition to the main Flask web interface, this project folder contains the following scripts:
 
-Usage
+- `set_location.py`: A script for setting the location of Xerox MFP C315 printers using data from a JSON file.
+- `infos_via_snmp.py`: A script for collecting print counters from printers using SNMP.
 
-    The printer status table displays information about printers connected to the local network.
-    The table automatically refreshes every 10 minutes to display the latest printer status.
-    Printer status is color-coded for easy identification: green for OK, orange for low toner, and red for replace status.
+## License
 
-Author
-
-    Rabah Ait Ramdane
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
