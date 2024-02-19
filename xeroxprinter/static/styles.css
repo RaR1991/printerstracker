@@ -1,0 +1,9 @@
+/* styles.css */
+
+/* Custom CSS for the sticky table header */
+.table-sticky thead {
+    position: sticky;
+    top: 0;
+    background-color: #ced5db; /*  Adjust the background color as needed */
+    z-index: 1000; /* Ensure the header stays above other content */
+}

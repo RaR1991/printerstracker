@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEC Xerox Printers Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Custom styles, if needed */
+        .low { color: orange; }
+        .replace { color: red; }
+
+        /* Match table header colors with respective ink colors */
+        .black-header { background-color: black; color: white; }
+        .cyan-header { background-color: cyan; color: white; }
+        .magenta-header { background-color: magenta; color: white; }
+        .bottle-header { background-color: grey; color: white; }
+        .yellow-header { background-color: yellow; color: black; }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center">XEROX Printers Status "DEC VENUE"</h1>
+        <table class="table table-sticky table-bordered">
+            <thead>
+                <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">IP</th>
+            <th class="text-center">SN</th>
+            <th class="text-center">Location</th>
+            <th class="text-center black-header">Black Toner</th>
+            <th class="text-center cyan-header">Cyan Toner</th>
+            <th class="text-center magenta-header">Magenta Toner</th>
+           
+            <th class="text-center yellow-header">Yellow Toner</th>
+             <th class="text-center bottle-header">Toner Bottle</th>
+        </tr>
+            </thead>
+            <tbody>
+                {% for printer in printer_data %}
+                <tr>
+                    <td class="text-center">{{ loop.index }}</td>
+                    <td class="text-center"><a href="{{ 'http://%s'%printer['IP'] }}" target="_blank" rel="noopener noreferrer">{{ printer['IP'] }}</a></td>
+                    <td class="text-center">{{ printer['SN'] }}</td>
+                    <td class="text-center">{{ printer['Location'] }}</td>
+                    <td class="text-center {{ 'text-success' if printer['Black Toner']['currentStatus'] == 'OK' else ('text-warning' if printer['Black Toner']['currentStatus'] == 'Low' else 'text-danger') }}">{{ printer['Black Toner']['currentStatus'] }} ({{ printer['Black Toner']['currentlevel'] }}) <br> {{ printer['Black Toner']['rp'] }}</td>
+                    <td class="text-center {{ 'text-success' if printer['Cyan Toner']['currentStatus'] == 'OK' else ('text-warning' if printer['Cyan Toner']['currentStatus'] == 'Low' else 'text-danger') }}">{{ printer['Cyan Toner']['currentStatus'] }} ({{ printer['Cyan Toner']['currentlevel'] }}) <br>{{ printer['Cyan Toner']['rp'] }}</td>
+                    <td class="text-center {{ 'text-success' if printer['Magenta Toner']['currentStatus'] == 'OK' else ('text-warning' if printer['Magenta Toner']['currentStatus'] == 'Low' else 'text-danger') }}">{{ printer['Magenta Toner']['currentStatus'] }} ({{ printer['Magenta Toner']['currentlevel'] }}) <br>{{ printer['Magenta Toner']['rp'] }}</td>
+ <td class="text-center 
+    {{ 'text-success' if printer['Yellow Toner']['currentStatus'] == 'OK' 
+    else ('text-warning' if printer['Yellow Toner']['currentStatus'] == 'Low' 
+    else 'text-danger') }}">
+    {{ printer['Yellow Toner']['currentStatus'] }} ({{ printer['Yellow Toner']['currentlevel'] }})<br>{{ printer['Yellow Toner']['rp'] }}
+</td>
+
+                    <td class="text-center {{ 'text-success' if printer['Toner Bottle']['currentStatus'] == 'OK' else ('text-warning' if printer['Toner Bottle']['currentStatus'] == 'Low' else 'text-danger') }}">{{ printer['Toner Bottle']['currentStatus'] }} ({{ printer['Toner Bottle']['currentlevel'] }})</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional: Add Bootstrap JS and Popper.js if needed -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Rabah Ait Ramdane for AFC 2023 Qatar -->
+
+</body>
+</html>

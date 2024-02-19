@@ -1,0 +1,226 @@
+{
+    "C315": {
+        "192.16.3.21": {
+            "sn": "5503363077",
+            "location": "somewhere"
+                    },
+        "192.16.3.22": {
+            "sn": "5503362177",
+            "location": "somewhere"
+                    },
+        "192.16.3.23": {
+            "sn": "5503366077",
+            "location": "somewhere"
+                    },
+        "192.16.3.24": {
+            "sn": "5503358677",
+            "location": "somewhere"
+                    },
+        "192.16.3.25": {
+            "sn": "5503359377",
+            "location": "somewhere"
+                    },
+        "192.16.3.26": {
+            "sn": "5503360377",
+            "location": "somewhere"
+                    },
+        "192.16.3.27": {
+            "sn": "5503365077",
+            "location": "somewhere"
+                    },
+        "192.16.3.28": {
+            "sn": "5503361177",
+            "location": "somewhere"
+                    },
+        "192.16.3.29": {
+            "sn": "5503354477",
+            "location": "somewhere"
+                    },
+        "192.16.3.30": {
+            "sn": "5503360477",
+            "location": "somewhere"
+                    },
+        "192.16.3.31": {
+            "sn": "5503360477",
+            "location": "somewhere"
+                    },
+        "192.16.3.32": {
+            "sn": "5503355677",
+            "location": "somewhere"
+                    },
+        "192.16.3.37": {
+            "sn": "5503357777",
+            "location": "somewhere"
+                    },
+        "192.16.3.38": {
+            "sn": "5503357577",
+            "location": "somewhere"
+                    },
+        "192.16.3.39": {
+            "sn": "5503361377",
+            "location": "somewhere"
+                    },
+        "192.16.3.40": {
+            "sn": "5503361077",
+            "location": "somewhere"
+                    },
+        "192.16.3.61": {
+            "sn": "5503357477",
+            "location": "somewhere"
+                    },
+        "192.16.3.63": {
+            "sn": "5503355177",
+            "location": "somewhere"
+                    },
+        "192.16.3.66": {
+            "sn": "5503362277",
+            "location": "somewhere"
+                    },
+        "192.16.3.67": {
+            "sn": "5503364777",
+            "location": "somewhere"
+                    },
+        "192.16.3.68": {
+            "sn": "5503358777",
+            "location": "somewhere"
+                    },
+        "192.16.3.69": {
+            "sn": "5503360877",
+            "location": "somewhere"
+                    },
+        "192.16.3.78": {
+            "sn": "5503365677",
+            "location": "somewhere"
+                    },
+        "192.16.3.97": {
+            "sn": "5503368677",
+            "location": "somewhere"
+                    },
+        "192.16.3.85": {
+            "sn": "5503363577",
+            "location": "somewhere"
+                    },
+        "192.16.3.88": {
+            "sn": "5503355677",
+            "location": "somewhere"
+                    },
+        "192.16.3.90": {
+            "sn": "5503355977",
+            "location": "somewhere"
+                    },
+        "192.16.3.91": {
+            "sn": "5503354777",
+            "location": "somewhere"
+                    },
+        "192.16.3.92": {
+            "sn": "5503363077",
+            "location": "somewhere"
+                    },
+        "192.16.3.93": {
+            "sn": "5503354777",
+            "location": "somewhere"
+                    },
+        "192.16.3.94": {
+            "sn": "5503362777",
+            "location": "somewhere"
+                    },
+        "192.16.3.96": {
+            "sn": "5503360277",
+            "location": "somewhere"
+                    }
+    },
+    "WC7855": {
+        "192.16.3.41": {
+            "sn": "3923777560",
+            "location": "somewhere"
+                    },
+        "192.16.3.42": {
+            "sn": "3923777747",
+            "location": "somewhere"
+                    },
+        "192.16.3.43": {
+            "sn": "3914777868",
+            "location": "somewhere"
+                    },
+        "192.16.3.60": {
+            "sn": "3923777699",
+            "location": "somewhere"
+                    },
+        "192.16.3.62": {
+            "sn": "3923777168",
+            "location": "somewhere"
+                    },
+        "192.16.3.64": {
+            "sn": "3923777570",
+            "location": "somewhere"
+                    },
+        "192.16.3.65": {
+            "sn": "3923777488",
+            "location": "somewhere"
+                    },
+        "192.16.3.70": {
+            "sn": "3923777591",
+            "location": "somewhere"
+                    },
+        "192.16.3.71": {
+            "sn": "3923777094",
+            "location": "somewhere"
+                    },
+        "192.16.3.74": {
+            "sn": "3923777520",
+            "location": "somewhere"
+                    },
+        "192.16.3.76": {
+            "sn": "3923777631",
+            "location": "somewhere"
+                    },
+        "192.16.3.77": {
+            "sn": "3914777007",
+            "location": "somewhere"
+                    },
+        "192.16.3.79": {
+            "sn": "3923777044",
+            "location": "somewhere"
+                    },
+        "192.16.3.81": {
+            "sn": "3711948430",
+            "location": "somewhere"
+                    },
+        "192.16.3.82": {
+            "sn": "3923777027",
+            "location": "somewhere"
+                    },
+        "192.16.3.83": {
+            "sn": "3923777086",
+            "location": "somewhere"
+                    },
+        "192.16.3.84": {
+            "sn": "3914777760",
+            "location": "somewhere"
+                    },
+        "192.16.3.86": {
+            "sn": "3923777535",
+            "location": "somewhere"
+                    },
+        "192.16.3.87": {
+            "sn": "3923777318",
+            "location": "somewhere"
+                    },
+        "192.16.3.89": {
+            "sn": "3919777241",
+            "location": "somewhere"
+                    },
+        "192.16.3.95": {
+            "sn": "3923777303",
+            "location": "somewhere"
+                    },
+        "192.16.3.98": {
+            "sn": "3923777420",
+            "location": "somewhere"
+                    },
+        "192.16.3.99": {
+            "sn": "3923777253",
+            "location": "somewhere"
+                    }
+    }
+}
